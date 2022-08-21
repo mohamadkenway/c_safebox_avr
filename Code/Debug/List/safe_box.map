@@ -1,0 +1,40 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+openMessage                                                                       0x0260      13
+lockedMessage                                                                     0x026D      12
+enterPasswoerdMessage                                                             0x0279      17
+passwordSetMessage                                                                0x028A      17
+wrongPasswordMessage                                                              0x029B      15
+resetPasswordMessage                                                              0x02AA      21
+password                                                                          0x02BF       7
+enteredPasssword                                                                  0x02C6       7
+_base_y                                                                           0x02CD       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+doorStatusFlag                                                                    R4,R5        2
+resetPasswordCounter                                                              R6,R7        2
+enteredPasswordCounter                                                            R8,R9        2
+_lcd_x                                                                            R11          1
+_lcd_y                                                                            R10          1
+_lcd_maxx                                                                         R13          1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+printMessage                                                                      0x000B7     25
+setPassword                                                                       0x00108     73
+isPasswordCorrect                                                                 0x00151     31
+main                                                                              0x00170    211
+_lcd_write_nibble_G100                                                            0x00243     20
+_lcd_write_data                                                                   0x00257     12
+lcd_gotoxy                                                                        0x00263     13
+lcd_clear                                                                         0x00270     12
+lcd_putchar                                                                       0x0027C     20
+lcd_init                                                                          0x00290     45
